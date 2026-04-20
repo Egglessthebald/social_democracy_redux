@@ -112,13 +112,22 @@ Q.weimar_willingness = 0
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
 Q.kpd_relation = 25;
 Q.ddp_relation = 60;
+Q.bb_relation = 30;
+Q.z_relation = 50;
+Q.bvp_relation = 30;
+Q.dhp_relation = 55;
+Q.vnr_relation = 35;
 Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.csvd_relation = 25;
+Q.wp_relation = 20;
+Q.slv_relation = 15;
+Q.cnblp_relation = 10;
+Q.kvp_relation = 10;
+Q.dnvp_relation = 10;
+Q.rlb_relation = 5;
+Q.nsdap_relation = 0;
 
 Q.kpd_leader = "Thälmann";
 Q.kpd_party_leader = "Thälmann";
