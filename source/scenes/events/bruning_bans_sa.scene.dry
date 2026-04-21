@@ -1,1 +1,2 @@
 title: Bruning has an idea
+view-if: year == 1932 and sa_militarisation >= 0.5 and chancellor == 'Bruning'
