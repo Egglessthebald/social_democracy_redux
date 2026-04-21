@@ -1,2 +1,2 @@
 title: Preparing for the IX olympiad
-
+view-if: year == 1928 and month == 4
