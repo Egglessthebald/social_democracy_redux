@@ -1,3 +1,16 @@
 title: Preparing for the IX olympiad
 view-if: year == 1928 and month == 4
 max-visits = 1
+new-page = true
+
+The IX olympiad is to be held in July this year, and preparations are underway to select the teams.
+
+This could be a prime opportunity to display proletarian strength[? if sports_funded >= 1 : , and our investment in sports leagues has empowered socialist athletes across Germany ?].
+
+- @hope
+- @train
+- @bribe
+
+@hope
+title: wish our athletes luck
+if sports_funded < 1 : go-to 
