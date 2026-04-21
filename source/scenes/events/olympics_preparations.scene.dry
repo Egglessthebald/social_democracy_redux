@@ -13,4 +13,29 @@ This could be a prime opportunity to display proletarian strength[? if sports_fu
 
 @hope
 title: wish our athletes luck
-if sports_funded < 1 : go-to 
+go-to: olympics_success if sports_funded >= 2; olympics_fail if sports_funded < 2
+
+@train
+title: give our athletes extra training
+subtitle: -1 resource
+view-if: resources >= 1
+on-arrival: resources -= 1; sports_funded += 1
+go-to: olympics_success if sports_funded >= 2; olympics_fail if sports_funded < 2
+
+@bribe
+title: bribe the committee
+subtitle: -1 resource. The party would rather we didn't though.
+view-if: resources >= 1
+on-arrival: left_dissent += 10; labor_dissent += 10; reformist_dissent += 10; center_dissent += 10; resources -= 1
+go-to: olympics_success
+
+@olympics_success
+title: our athletes are selected!
+on-arrival: left_dissent -= 5; labor_dissent -= 5; reformist_dissent -= 5; center_dissent -= 5; socialism_support += 10*(1-dissent)
+
+Thanks to our preparations, many members of our sports leagues are selected for the olympics! We wish them farewell as they set off for the olympics in Amsterdam.
+
+@olympics_fail
+title: we don't make it.
+
+Unfortunately, few of our athletes make it to the team. Maybe we can make the next olympics.
