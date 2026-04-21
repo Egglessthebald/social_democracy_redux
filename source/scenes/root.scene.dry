@@ -223,6 +223,9 @@ Q.rural = 25; // agriculture and forestry employment... but many of those are pr
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.unemployed = 8.6;
 Q.catholics = 30;
+Q.bavarians = 12;
+Q.hanoverians = 6;
+Q.saxons = 6;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -250,9 +253,9 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'sapd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
-Q.states = ['prussia', 'bavaria', 'thuringia', 'saxony', 'schaumburg_lippe', 'hamburg', 'wurttemberg'];
+Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics', 'bavarians', 'hanoverians', 'saxons'];
+Q.parties = ['spd', 'bb', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'bvp', 'cnblp', 'dhp', 'vnr', 'slv', 'csvd', 'kvp', 'wp', 'rlb'];
+Q.states = ['prussia', 'bavaria', 'thuringia', 'saxony', 'schaumburg_lippe', 'hamburg', 'wurttemberg', 'baden', 'gotha', 'lubeck', 'anhalt', 'bremen', 'brunswick', 'hesse', 'lippe', 'mecklenburg-schwerin', 'mecklenburg-strelitz', 'oldenburg', 'waldeck'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -264,7 +267,6 @@ Q.workers_ddp = 0;
 Q.workers_dvp = 0;
 Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
-Q.workers_other = 10;
 
 Q.old_middle_spd = 5;
 Q.old_middle_sapd = 0;
