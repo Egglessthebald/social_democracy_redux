@@ -1,4 +1,10 @@
 title: Bruning has an idea
-view-if: year == 1932 and sa_militarisation >= 0.5 and chancellor == 'Bruning'
-new-page = true
-max-views = 1
+view-if: year == 1932 and sa_militarisation >= 0.5 and chancellor == 'Bruning' and sa_banned == 0
+new-page: true
+max-views: 1
+
+- @ban_sa
+
+@ban_sa
+title: Chancellor Bruning's response is... banning the SA?
+on-arrival: sa_banned == 1; sa_militarisation -= 0.1*interior_police_loyalty; sa_strength -= 5*interior_police_loyalty
