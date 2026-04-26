@@ -112,7 +112,9 @@ Q.weimar_willingness = 0
 // organizations
 
 // inter-party relations
+Q.dski_relation = 10;
 Q.kpd_relation = 25;
+Q.kpo_relation = 35;
 Q.ddp_relation = 60;
 Q.bb_relation = 30;
 Q.z_relation = 50;
