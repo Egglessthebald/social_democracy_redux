@@ -1,2 +1,31 @@
 title: The KPD moves away from us...
-  
+view-if: year == 1928 and month >= 12
+max-visits: 1
+new-page: true
+
+In light of the increasing Stalinisation of the Comintern, a new thesis has been put forward, which portrays Social Democracy and the "right opposition" as the key enemies of the revolution. As a result, we stand to lose[? if kpd_relation <= 25 : , especially due to deteriorating relations. ?]
+
+- @stop
+- @allow
+
+@stop
+title: Can we convince them to reject this?
+view-if: levi_advisor or rosenfeld_advisor
+go-to: stop_success if kpd_relation >= 50; stop_fail if kpd_relation < 50
+
+@stop_success
+on-arrival: kpd_relation *= 1.1; pro_republic *= 1.1; dski_formed += 1; dski_workers = kpd_workers*(1-pro_republic/100); dski_unemployed = kpd_unemployed*(1-pro_republic/100); kpd_workers *= 1+(pro_republic/100); kpd_new_middle *= 1+(pro_republic/100); kpd_rural *= 1+(pro_republic/100); kpd_unemployed *= 1+(pro_republic/100); kpd_party_leader = "Conciliators"
+
+We convince the Communists to reject the thesis. This has resulted in the Stalinists leaving en masse, forming the Deutsche Sektion der Kommunistischen Internationale (DSKI). This means that, with Thalmann gone, the conciliators have taken the reins.
+
+@stop_fail
+on-arrival: kpd_relation *= 0.5; pro_republic *= 0.9; spd_workers += kpd_workers(pro_republic/100); spd_new_middle += kpd_new_middle*(pro_republic/100); spd_rural += kpd_rural*(pro_republic/100); spd_unemployed += kpd_unemployed*(pro_republic/100); left_strength += kpd_r*(pro_republic/100)
+
+We fail to convince the Communists, who paint us as meddling "social fascists". This has resulted in the "right opposition" being purged en masse, most of them flocking to the left wing of our party. This means that, with the conciliators gone, Thalmann is in undisputed control of the KPD.
+
+@allow
+title: Realistically, there is nothing we can do.
+subtitle: skill issue
+on-arrival: kpd_relation *= 0.6; socialism *= 0.9; kpo_formed += 1; kpo_workers += kpd_workers(pro_republic/100); kpo_new_middle += kpd_new_middle*(pro_republic/100); kpo_rural += kpd_rural*(pro_republic/100); kpo_unemployed += kpd_unemployed*(pro_republic/100)
+
+The Communists adopt the thesis. This has resulted in the "right opposition" being purged en masse, who form the Communist Party of the Opposition (KPO). This means that, with the moderates gone, Thalmann is in undisputed control of the KPD.
