@@ -1,1 +1,10 @@
+title: the formation of the CNBLP
+new-page: true
+subtitle: the DNVP splinters
+view-if: rural_qol <= 75;
+on-arrival: cnblp_formed += 1; cnblp_rural += dnvp_rural*(pro_republic/100); cnblp_catholics += dnvp_catholics*(pro_republic/200); cnblp_relation *= 1.1 if agricultural_finance > 0
+max-visits: 1
 
+Due to widespread decline in rural areas, many DNVP members have formed the new rural CNBLP.
+
+[? if agricultural_finance > 0 : Due to our agricultural policies, the CNBLP is willing to work with us, and they could be useful for challenging DNVP control of the countryside. ?]
