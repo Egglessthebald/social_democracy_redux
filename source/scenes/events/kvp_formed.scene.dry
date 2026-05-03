@@ -1,1 +1,10 @@
+title: the formation of the KVP
+new-page: true
+subtitle: the DNVP splinters
+view-if: young_plan_seen == 1;
+on-arrival: kvp_formed += 1; kvp_workers += dnvp_workers*(pro_republic/200); kvp_old_middle += dnvp_old_middle*(pro_republic/100); kvp_new_middle += dnvp_new_middle*(pro_republic/200); kvp_rural += dnvp_rural*(pro_republic/200); kvp_catholics += dnvp_catholics*(pro_republic/200); kvp_relation *= 1.1 if reformist_strength > center_strength+left_strength
+max-visits: 1
 
+Due to HUGEnberg's stance on the young plan, many moderates in the DNVP, including GottFRIED TreVIRaniUS, have broken off, forming the more moderate KVP.
+
+[? if reformist_strength > center_strength+left_strength : Some in the party support co-operating with the KVP, seeing them as a buffer against the more militant DNVP and NSDAP. ?]
