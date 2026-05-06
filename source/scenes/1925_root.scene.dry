@@ -114,6 +114,7 @@ Q.cnblp_relation = 0;
 Q.kvp_relation 0;
 Q.dnvp_relation = 10;
 Q.rlb_relation = 5;
+Q.aspd_relation = 0;
 Q.nsdap_relation = 0;
 
 Q.kpd_leader = "Thälmann";
@@ -240,7 +241,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics', 'bavarians', 'hanoverians', 'saxons'];
-Q.parties = ['dski', 'kpo', 'spd', 'bb', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'bvp', 'cnblp', 'dhp', 'vnr', 'slv', 'csvd', 'kvp', 'wp', 'rlb'];
+Q.parties = ['dski', 'kpo', 'spd', 'bb', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'bvp', 'cnblp', 'dhp', 'vnr', 'slv', 'csvd', 'kvp', 'wp', 'rlb', 'aspd'];
 Q.states = ['prussia', 'bavaria', 'thuringia', 'saxony', 'schaumburg_lippe', 'hamburg', 'wurttemberg', 'baden', 'gotha', 'lubeck', 'anhalt', 'bremen', 'brunswick', 'hesse', 'lippe', 'mecklenburg-schwerin', 'mecklenburg-strelitz', 'oldenburg', 'waldeck'];
 
 // Support for party by social group
